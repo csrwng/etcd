@@ -206,7 +206,7 @@ func (s *Server) HTTPHandler() http.Handler {
 	s.installV2(router)
 	// Mod is deprecated temporariy due to its unstable state.
 	// It would be added back later.
-	// s.installMod(router)
+	s.installMod(router)
 
 	if s.trace {
 		s.installDebug(router)
